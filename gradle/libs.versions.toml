@@ -8,7 +8,7 @@ compose = "1.5.4"
 composeCompiler = "1.5.4"
 material3 = "1.1.2"
 
-hilt = "2.48.1"
+hilt = "2.49"
 
 okhttp = "4.12.0"
 
