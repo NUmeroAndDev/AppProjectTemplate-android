@@ -17,7 +17,7 @@ androidx-test-ext-junit = "1.1.5"
 espresso-core = "3.5.1"
 
 [libraries]
-kotlinxCoroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
+kotlinxCoroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0"
 
 androidxActivity = "androidx.activity:activity-compose:1.8.2"
 androidxCore = "androidx.core:core-ktx:1.12.0"
