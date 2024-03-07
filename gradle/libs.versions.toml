@@ -6,7 +6,7 @@ ksp = "1.9.22-1.0.18"
 lifecycle = "2.7.0"
 compose = "1.6.2"
 composeCompiler = "1.5.10"
-material3 = "1.2.0"
+material3 = "1.2.1"
 
 hilt = "2.51"
 
