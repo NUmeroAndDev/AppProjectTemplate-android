@@ -4,7 +4,7 @@ kotlin = "1.9.23"
 ksp = "1.9.23-1.0.19"
 
 lifecycle = "2.7.0"
-compose = "1.6.4"
+compose = "1.6.5"
 composeCompiler = "1.5.11"
 material3 = "1.2.1"
 
