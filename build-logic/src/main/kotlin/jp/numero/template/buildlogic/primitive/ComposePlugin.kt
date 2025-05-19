@@ -30,6 +30,7 @@ class ComposePlugin : Plugin<Project> {
                 implementation(libs.findLibrary("androidxHiltNavigationCompose"))
 
                 implementation(libs.findLibrary("coil"))
+                implementation(libs.findLibrary("coilOkhttp"))
             }
         }
     }

@@ -7,8 +7,8 @@ lifecycle = "2.9.0"
 compose = "1.7.8"
 material3 = "1.3.2"
 
+coil = "3.2.0"
 hilt = "2.56.2"
-
 okhttp = "4.12.0"
 
 junit = "4.13.2"
@@ -35,7 +35,8 @@ androidxComposeMaterial3 = { module = "androidx.compose.material3:material3", ve
 androidxComposeMaterial3WindowSizeClass = { module = "androidx.compose.material3:material3-window-size-class", version.ref = "material3" }
 androidxComposeUiTest = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose" }
 
-coil = "io.coil-kt:coil-compose:2.7.0"
+coil = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil" }
+coilOkhttp = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coil" }
 
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
 hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
