@@ -18,7 +18,7 @@ class ComposePlugin : Plugin<Project> {
                 implementation(libs.findLibrary("androidxComposeUiToolingPreview"))
                 implementation(libs.findLibrary("androidxComposeFoundation"))
                 implementation(libs.findLibrary("androidxComposeMaterial3"))
-                implementation(libs.findLibrary("androidxComposeMaterial3WindowSizeClass"))
+                implementation(libs.findLibrary("androidxComposeMaterial3Adaptive"))
 
                 testImplementation(libs.findLibrary("androidxComposeUiTest"))
 

@@ -6,6 +6,7 @@ ksp = "2.2.0-2.0.2"
 lifecycle = "2.9.1"
 compose = "1.8.3"
 material3 = "1.4.0-alpha17"
+material3Adaptive = "1.2.0-alpha08"
 
 coil = "3.2.0"
 hilt = "2.56.2"
@@ -32,7 +33,7 @@ androidxComposeUiTooling = { module = "androidx.compose.ui:ui-tooling", version.
 androidxComposeUiToolingPreview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
 androidxComposeFoundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
 androidxComposeMaterial3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
-androidxComposeMaterial3WindowSizeClass = { module = "androidx.compose.material3:material3-window-size-class", version.ref = "material3" }
+androidxComposeMaterial3Adaptive = { module = "androidx.compose.material3.adaptive:adaptive", version.ref = "material3Adaptive" }
 androidxComposeUiTest = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose" }
 
 coil = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil" }
