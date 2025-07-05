@@ -17,7 +17,7 @@ class KotlinPlugin : Plugin<Project> {
             extensions.configure<KotlinAndroidProjectExtension> {
                 compilerOptions {
                     jvmTarget.set(
-                        JvmTarget.fromTarget(JavaVersion.VERSION_11.toString()),
+                        JvmTarget.fromTarget(JavaVersion.VERSION_17.toString()),
                     )
                     freeCompilerArgs.addAll(
                         listOf(
