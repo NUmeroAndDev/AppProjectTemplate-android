@@ -21,7 +21,7 @@ class KotlinPlugin : Plugin<Project> {
                     )
                     freeCompilerArgs.addAll(
                         listOf(
-                            "-Xcontext-receivers",
+                            "-Xcontext-parameters",
                         ),
                     )
                 }
