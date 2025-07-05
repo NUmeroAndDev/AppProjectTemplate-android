@@ -14,6 +14,7 @@ class FeatureModulePlugin : Plugin<Project> {
                 apply("buildlogic.primitive.compose")
                 apply("buildlogic.primitive.kotlin")
                 apply("buildlogic.primitive.hilt")
+                apply("buildlogic.primitive.test")
             }
             dependencies {
                 implementation(project(":data"))

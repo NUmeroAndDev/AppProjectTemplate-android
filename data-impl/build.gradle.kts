@@ -2,6 +2,7 @@ plugins {
     id("buildlogic.primitive.androidlibrary")
     id("buildlogic.primitive.kotlin")
     id("buildlogic.primitive.hilt")
+    id("buildlogic.primitive.test")
 }
 
 android {
