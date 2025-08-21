@@ -9,7 +9,7 @@ material3 = "1.4.0-alpha18"
 material3Adaptive = "1.2.0-alpha11"
 
 coil = "3.3.0"
-hilt = "2.56.2"
+hilt = "2.57.1"
 okhttp = "5.1.0"
 
 junit = "4.13.2"
