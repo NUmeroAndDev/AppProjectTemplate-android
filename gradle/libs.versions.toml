@@ -5,7 +5,7 @@ ksp = "2.2.10-2.0.2"
 
 lifecycle = "2.9.2"
 compose = "1.9.0"
-material3 = "1.4.0-beta02"
+material3 = "1.4.0-beta03"
 material3Adaptive = "1.2.0-alpha11"
 
 coil = "3.3.0"
