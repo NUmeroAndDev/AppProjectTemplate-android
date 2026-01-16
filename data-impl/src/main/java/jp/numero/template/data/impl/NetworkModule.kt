@@ -1,4 +1,4 @@
-package jp.numero.template.data
+package jp.numero.template.data.impl
 
 import dagger.Module
 import dagger.Provides

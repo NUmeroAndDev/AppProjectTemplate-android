@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "jp.numero.template.data"
+    namespace = "jp.numero.template.data.impl"
 }
 
 dependencies {
