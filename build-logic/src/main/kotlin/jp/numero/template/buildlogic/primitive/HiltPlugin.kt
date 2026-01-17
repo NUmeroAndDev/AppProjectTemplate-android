@@ -8,14 +8,8 @@ class HiltPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
-                apply("org.jetbrains.kotlin.android")
                 apply("com.google.devtools.ksp")
                 apply("dagger.hilt.android.plugin")
-            }
-            android {
-                sourceSets.configureEach {
-                    kotlin.srcDir("$buildDir/generated/ksp/$name/kotlin/")
-                }
             }
             dependencies {
                 implementation(libs.findLibrary("hilt.android"))

@@ -35,9 +35,9 @@ fun Project.commonConfiguration() {
         }
 
         sourceSets {
-            getByName("main").java.srcDir("src/main/kotlin")
-            getByName("test").java.srcDir("src/test/kotlin")
-            getByName("androidTest").java.srcDir("src/androidTest/kotlin")
+            getByName("main").kotlin.directories += "src/main/kotlin"
+            getByName("test").kotlin.directories += "src/test/kotlin"
+            getByName("androidTest").kotlin.directories += "src/androidTest/kotlin"
         }
 
         compileOptions {

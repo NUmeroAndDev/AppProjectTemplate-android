@@ -56,9 +56,7 @@ kspPlugin = { module = "com.google.devtools.ksp:com.google.devtools.ksp.gradle.p
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "androidGradlePlugin" }
-kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-kspPlugin = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 
 [bundles]
 testing = [
