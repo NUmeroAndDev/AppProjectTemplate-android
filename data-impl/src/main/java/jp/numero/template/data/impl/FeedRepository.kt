@@ -1,5 +1,6 @@
-package jp.numero.template.data
+package jp.numero.template.data.impl
 
+import jp.numero.template.data.TemplateRepository
 import okhttp3.OkHttpClient
 import javax.inject.Inject
 import javax.inject.Singleton
