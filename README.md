@@ -10,5 +10,8 @@ This project is Android application project template.
       :app-->:feature:*;
       :app-->:data-impl;
       :feature:*-->:data;
+      :feature:*-->:core;
       :data-impl-->:data;
+      :data-impl-->:core;
+      :core-->:data;
 ```

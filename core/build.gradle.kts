@@ -1,16 +1,13 @@
 plugins {
     id("buildlogic.primitive.androidlibrary")
     id("buildlogic.primitive.kotlin")
-    id("buildlogic.primitive.hilt")
     id("buildlogic.primitive.test")
 }
 
 android {
-    namespace = "jp.numero.template.data.impl"
+    namespace = "jp.numero.template.core"
 }
 
 dependencies {
-    implementation(projects.core)
     implementation(projects.data)
-    implementation(libs.okhttp3)
 }
