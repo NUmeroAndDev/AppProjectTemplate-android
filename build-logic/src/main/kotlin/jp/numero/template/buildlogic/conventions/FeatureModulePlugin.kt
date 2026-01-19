@@ -17,6 +17,7 @@ class FeatureModulePlugin : Plugin<Project> {
                 apply("buildlogic.primitive.test")
             }
             dependencies {
+                implementation(project(":core"))
                 implementation(project(":data"))
             }
         }

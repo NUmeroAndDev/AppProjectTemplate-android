@@ -15,7 +15,10 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Template"
-include(":app")
-include(":feature:home")
-include(":data")
-include(":data-impl")
+include(
+    ":app",
+    ":core",
+    ":data",
+    ":data-impl",
+    ":feature:home",
+)
