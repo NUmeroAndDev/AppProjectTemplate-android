@@ -23,6 +23,10 @@ jobs:
           distribution: zulu
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@0723195856401067f7a2779048b490ace7a47d7c # v5.0.2
+        with:
+          cache-disabled: true
+      - name: Setup Gradle Cache
+        uses: ./.github/actions/gradle-cache
 
       - name: Build
         run: ./gradlew assembleDebug
