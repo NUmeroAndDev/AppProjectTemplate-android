@@ -48,6 +48,7 @@ runs:
       with:
         path: |
           ~/.gradle/caches/build-cache-*
+          ${{ github.workspace }}/.gradle/configuration-cache
         key: gradle-build-${{ github.job }}-${{ env.WEEK }}
         restore-keys: |
           gradle-build-${{ github.job }}-
@@ -58,6 +59,7 @@ runs:
       with:
         path: |
           ~/.gradle/caches/build-cache-*
+          ${{ github.workspace }}/.gradle/configuration-cache
         key: gradle-build-${{ github.job }}-${{ env.WEEK }}
         restore-keys: |
           gradle-build-${{ github.job }}-
