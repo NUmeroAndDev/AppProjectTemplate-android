@@ -47,7 +47,7 @@ runs:
       uses: actions/cache@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
       with:
         path: |
-          ~/.gradle/caches/build-cache-*
+          ~/.gradle/caches/build-cache-1
           ${{ github.workspace }}/.gradle/configuration-cache
         key: gradle-build-${{ github.job }}-${{ env.WEEK }}
         restore-keys: |
@@ -58,7 +58,7 @@ runs:
       uses: actions/cache/restore@668228422ae6a00e4ad889ee87cd7109ec5666a7 # v5.0.4
       with:
         path: |
-          ~/.gradle/caches/build-cache-*
+          ~/.gradle/caches/build-cache-1
           ${{ github.workspace }}/.gradle/configuration-cache
         key: gradle-build-${{ github.job }}-${{ env.WEEK }}
         restore-keys: |
