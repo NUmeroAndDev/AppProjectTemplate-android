@@ -3,7 +3,7 @@ androidGradlePlugin = "9.2.1"
 kotlin = "2.3.0"
 ksp = "2.3.4"
 
-lifecycle = "2.10.0"
+lifecycle = "2.11.0"
 compose = "1.11.3"
 material3 = "1.4.0"
 material3Adaptive = "1.2.0"
