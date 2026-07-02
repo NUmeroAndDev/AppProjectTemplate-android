@@ -25,11 +25,11 @@ fun Project.commonConfiguration() {
         namespace?.let {
             this.namespace = it
         }
-        compileSdkVersion(36)
+        compileSdkVersion(37)
 
         defaultConfig {
             minSdk = 24
-            targetSdk = 36
+            targetSdk = 37
 
             testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         }
