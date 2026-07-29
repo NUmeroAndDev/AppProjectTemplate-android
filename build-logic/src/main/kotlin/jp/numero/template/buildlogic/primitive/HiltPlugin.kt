@@ -12,6 +12,7 @@ class HiltPlugin : Plugin<Project> {
                 apply("dagger.hilt.android.plugin")
             }
             dependencies {
+                implementation(libs.findLibrary("kotlinMetadataJvm"))
                 implementation(libs.findLibrary("hilt.android"))
                 ksp(libs.findLibrary("hilt.compiler"))
             }
