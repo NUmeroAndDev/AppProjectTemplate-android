@@ -1,14 +1,14 @@
 package jp.numero.template.buildlogic.primitive
 
-import com.android.build.gradle.BaseExtension
-import com.android.build.gradle.LibraryExtension
-import com.android.build.gradle.internal.dsl.BaseAppModuleExtension
+import com.android.build.api.dsl.ApplicationExtension
+import com.android.build.api.dsl.CommonExtension
+import com.android.build.api.dsl.LibraryExtension
 import org.gradle.api.JavaVersion
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.dependencies
 
-fun Project.application(action: BaseAppModuleExtension.() -> Unit) {
+fun Project.application(action: ApplicationExtension.() -> Unit) {
     extensions.configure(action)
 }
 
@@ -16,7 +16,7 @@ fun Project.library(action: LibraryExtension.() -> Unit) {
     extensions.configure(action)
 }
 
-fun Project.android(action: BaseExtension.() -> Unit) {
+fun Project.android(action: CommonExtension.() -> Unit) {
     extensions.configure(action)
 }
 
@@ -25,22 +25,21 @@ fun Project.commonConfiguration() {
         namespace?.let {
             this.namespace = it
         }
-        compileSdkVersion(37)
+        compileSdk = 37
 
-        defaultConfig {
+        defaultConfig.apply {
             minSdk = 24
-            targetSdk = 37
 
             testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         }
 
-        sourceSets {
+        sourceSets.apply {
             getByName("main").kotlin.directories += "src/main/kotlin"
             getByName("test").kotlin.directories += "src/test/kotlin"
             getByName("androidTest").kotlin.directories += "src/androidTest/kotlin"
         }
 
-        compileOptions {
+        compileOptions.apply {
             sourceCompatibility = JavaVersion.VERSION_17
             targetCompatibility = JavaVersion.VERSION_17
         }
@@ -48,7 +47,7 @@ fun Project.commonConfiguration() {
         dependencies {
         }
 
-        testOptions {
+        testOptions.apply {
             unitTests {
                 isIncludeAndroidResources = true
             }

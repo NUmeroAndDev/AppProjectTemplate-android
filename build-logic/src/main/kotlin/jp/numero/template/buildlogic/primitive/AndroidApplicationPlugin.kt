@@ -11,6 +11,9 @@ class AndroidApplicationPlugin : Plugin<Project> {
             }
 
             application {
+                defaultConfig {
+                    targetSdk = 37
+                }
                 commonConfiguration()
             }
         }
