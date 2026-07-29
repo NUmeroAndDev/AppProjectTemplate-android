@@ -12,9 +12,7 @@ class KotlinPlugin : Plugin<Project> {
             extensions.configure<KotlinAndroidProjectExtension> {
                 compilerOptions {
                     freeCompilerArgs.addAll(
-                        listOf(
-                            "-Xcontext-parameters",
-                        ),
+                        listOf(),
                     )
                 }
             }
