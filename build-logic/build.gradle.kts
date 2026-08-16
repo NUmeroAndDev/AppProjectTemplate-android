@@ -51,6 +51,10 @@ gradlePlugin {
             id = "buildlogic.primitive.hilt"
             implementationClass = "jp.numero.template.buildlogic.primitive.HiltPlugin"
         }
+        register("room") {
+            id = "buildlogic.primitive.room"
+            implementationClass = "jp.numero.template.buildlogic.primitive.RoomPlugin"
+        }
         register("test") {
             id = "buildlogic.primitive.test"
             implementationClass = "jp.numero.template.buildlogic.primitive.TestPlugin"

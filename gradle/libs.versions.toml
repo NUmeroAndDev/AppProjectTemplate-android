@@ -7,6 +7,7 @@ lifecycle = "2.11.0"
 compose = "1.11.4"
 material3 = "1.5.0-alpha25"
 material3Adaptive = "1.2.0"
+room = "2.8.4"
 
 coil = "3.5.0"
 hilt = "2.60.1"
@@ -36,6 +37,9 @@ androidxComposeFoundation = { module = "androidx.compose.foundation:foundation",
 androidxComposeMaterial3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
 androidxComposeMaterial3Adaptive = { module = "androidx.compose.material3.adaptive:adaptive", version.ref = "material3Adaptive" }
 androidxComposeUiTest = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "compose" }
+
+androidxRoom = { module = "androidx.room:room-runtime", version.ref = "room" }
+androidxRoomCompiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 
 coil = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil" }
 coilOkhttp = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coil" }
