@@ -18,6 +18,7 @@ rootProject.name = "Template"
 include(
     ":app",
     ":core:common",
+    ":core:ui",
     ":data",
     ":data-impl",
     ":feature:home",

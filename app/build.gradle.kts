@@ -52,6 +52,7 @@ android {
 
 dependencies {
     implementation(projects.core.common)
+    implementation(projects.core.ui)
     implementation(projects.data)
     implementation(projects.dataImpl)
     implementation(projects.feature.home)

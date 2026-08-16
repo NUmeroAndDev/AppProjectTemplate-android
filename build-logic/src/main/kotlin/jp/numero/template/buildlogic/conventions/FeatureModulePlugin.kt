@@ -18,6 +18,7 @@ class FeatureModulePlugin : Plugin<Project> {
             }
             dependencies {
                 implementation(project(":core:common"))
+                implementation(project(":core:ui"))
                 implementation(project(":data"))
             }
         }

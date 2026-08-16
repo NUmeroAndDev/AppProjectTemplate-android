@@ -9,9 +9,11 @@ This project is Android application project template.
   graph TD;
       :app-->:feature:*;
       :app-->:data-impl;
-      :feature:*-->:data;
       :feature:*-->:core:common;
+      :feature:*-->:core:ui;
+      :feature:*-->:data;
       :data-impl-->:data;
       :data-impl-->:core:common;
       :core:common-->:data;
+      :core:ui-->:data;
 ```
