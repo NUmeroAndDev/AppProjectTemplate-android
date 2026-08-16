@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "jp.numero.template.core"
+    namespace = "jp.numero.template.core.common"
 }
 
 dependencies {
