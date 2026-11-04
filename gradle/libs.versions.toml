@@ -11,7 +11,7 @@ room = "2.8.4"
 
 coil = "3.6.3"
 hilt = "2.60.1"
-okhttp = "5.5.0"
+okhttp = "5.5.1"
 
 junit = "4.13.2"
 androidx-test-ext-junit = "1.3.0"
