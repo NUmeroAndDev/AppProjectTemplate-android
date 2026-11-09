@@ -1,6 +1,6 @@
 package jp.numero.template.buildlogic.primitive
 
-import com.google.devtools.ksp.gradle.KspExtension
+import androidx.room3.gradle.RoomExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
@@ -12,15 +12,15 @@ class RoomPlugin : Plugin<Project> {
         with(target) {
             with(pluginManager) {
                 apply("com.google.devtools.ksp")
+                apply("androidx.room3")
             }
             android {
                 sourceSets {
                     getByName("test").assets.directories += "$projectDir/schemas"
                 }
             }
-            extensions.configure<KspExtension> {
-                arg("room.schemaLocation", "$projectDir/schemas")
-                arg("room.generateKotlin", "true")
+            extensions.configure<RoomExtension> {
+                schemaDirectory("$projectDir/schemas")
             }
             dependencies {
                 implementation(libs.findLibrary("androidxRoom"))

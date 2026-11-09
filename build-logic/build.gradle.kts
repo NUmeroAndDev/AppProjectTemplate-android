@@ -24,6 +24,7 @@ dependencies {
     compileOnly(libs.kotlinGradlePlugin)
     compileOnly(libs.kspPlugin)
     implementation(libs.hiltPlugin)
+    implementation(libs.roomPlugin)
 }
 
 gradlePlugin {
