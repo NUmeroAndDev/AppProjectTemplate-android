@@ -4,6 +4,7 @@ kotlin = "2.4.21"
 ksp = "2.3.10"
 
 lifecycle = "2.11.0"
+nav3 = "1.2.1"
 compose = "1.12.1"
 material3 = "1.5.0-rc01"
 material3Adaptive = "1.3.0"
@@ -24,7 +25,9 @@ kotlinxCoroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0"
 androidxActivity = "androidx.activity:activity-compose:1.13.0"
 androidxCore = "androidx.core:core-ktx:1.19.1"
 androidxCoreSplash = "androidx.core:core-splashscreen:1.2.0"
-androidxNavigationCompose = "androidx.navigation:navigation-compose:2.9.8"
+androidxNavigation3Runtime = { module = "androidx.navigation3:navigation3-runtime", version.ref = "nav3" }
+androidxNavigation3Ui = { module = "androidx.navigation3:navigation3-ui", version.ref = "nav3" }
+androidxLifecycleViewModelNavigation3 = { module = "androidx.lifecycle:lifecycle-viewmodel-navigation3", version.ref = "lifecycle" }
 androidxLifecycleRuntime = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
 androidxLifecycleViewModel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
 androidxHiltViewModelCompose = "androidx.hilt:hilt-lifecycle-viewmodel-compose:1.4.0"
@@ -63,6 +66,7 @@ roomPlugin = { module = "androidx.room3:androidx.room3.gradle.plugin", version.r
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 
 [bundles]
 testing = [
