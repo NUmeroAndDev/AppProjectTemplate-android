@@ -25,7 +25,9 @@ fun Project.commonConfiguration() {
         namespace?.let {
             this.namespace = it
         }
-        compileSdk = 37
+        compileSdk {
+            version = release(37)
+        }
 
         defaultConfig.apply {
             minSdk = 24
