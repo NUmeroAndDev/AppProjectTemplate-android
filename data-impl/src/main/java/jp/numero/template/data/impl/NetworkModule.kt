@@ -21,7 +21,7 @@ object DataModule {
     @Singleton
     @Provides
     fun provideOkHttpClient(
-        interceptors: Set<@JvmSuppressWildcards Interceptor>
+        interceptors: Set<@JvmSuppressWildcards Interceptor>,
     ): OkHttpClient {
         return OkHttpClient.Builder()
             .apply { interceptors.forEach(::addInterceptor) }

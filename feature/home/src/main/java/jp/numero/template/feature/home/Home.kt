@@ -15,10 +15,10 @@ import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 
 @Composable
 fun Home(
-    viewModel: HomeViewModel = hiltViewModel()
+    viewModel: HomeViewModel = hiltViewModel(),
 ) {
     Home(
-        modifier = Modifier.fillMaxSize()
+        modifier = Modifier.fillMaxSize(),
     )
 }
 
@@ -35,12 +35,12 @@ private fun Home(
                 title = { Text(text = "Template") },
                 scrollBehavior = scrollBehavior,
             )
-        }
+        },
     ) {
         Box(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(it)
+                .padding(it),
         ) {
             Text(text = "Hello World")
         }
