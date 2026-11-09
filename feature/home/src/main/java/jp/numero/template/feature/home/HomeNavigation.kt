@@ -1,19 +1,19 @@
 package jp.numero.template.feature.home
 
-import androidx.navigation.NavController
-import androidx.navigation.NavGraphBuilder
-import androidx.navigation.NavOptions
-import androidx.navigation.compose.composable
+import androidx.navigation3.runtime.EntryProviderScope
+import androidx.navigation3.runtime.NavKey
+import jp.numero.template.core.ui.navigation.Navigator
+import kotlinx.serialization.Serializable
 
-const val homeRoute = "home"
+@Serializable
+data object HomeRoute : NavKey
 
-fun NavController.navigateToHome(navOptions: NavOptions? = null) {
-    navigate(homeRoute, navOptions)
+fun Navigator.navigateToHome() {
+    navigate(HomeRoute)
 }
 
-fun NavGraphBuilder.homeScreen(
-) {
-    composable(route = homeRoute) {
+fun EntryProviderScope<NavKey>.homeScreen() {
+    entry<HomeRoute> {
         Home()
     }
 }

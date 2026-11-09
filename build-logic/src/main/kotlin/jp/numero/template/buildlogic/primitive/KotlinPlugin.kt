@@ -9,6 +9,9 @@ import org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjectExtension
 class KotlinPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
+            with(pluginManager) {
+                apply("org.jetbrains.kotlin.plugin.serialization")
+            }
             extensions.configure<KotlinAndroidProjectExtension> {
                 compilerOptions {
                     freeCompilerArgs.addAll(

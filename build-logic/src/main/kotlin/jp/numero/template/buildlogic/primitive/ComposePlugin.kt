@@ -25,7 +25,9 @@ class ComposePlugin : Plugin<Project> {
                 debugImplementation(libs.findLibrary("androidxComposeUiTooling"))
 
                 implementation(libs.findLibrary("androidxActivity"))
-                implementation(libs.findLibrary("androidxNavigationCompose"))
+                implementation(libs.findLibrary("androidxNavigation3Runtime"))
+                implementation(libs.findLibrary("androidxNavigation3Ui"))
+                implementation(libs.findLibrary("androidxLifecycleViewModelNavigation3"))
                 implementation(libs.findLibrary("androidxLifecycleViewModel"))
                 implementation(libs.findLibrary("androidxHiltViewModelCompose"))
 
